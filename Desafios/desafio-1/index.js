@@ -28,26 +28,33 @@ Ao final deve se exibir uma mensagem:
 */
 
 const name = 'Dark Lord 666'
-let XP = 666000
+let XP = 5000
 let lvl = ''
 
 switch (XP) {
     case (XP <= 1000):
-        lvl = 'Ferro'
+        lvl = 'Ferro';
+        break
     case (XP > 1000 && XP <= 2000):
-        lvl = 'Bronze'
+        lvl = 'Bronze';
+        break
     case (XP > 2000 && XP <= 5000):
-        lvl = 'Prata'
+        lvl = 'Prata';
+        break
     case (XP > 5000 && XP <= 7000):
-        lvl = 'Ouro'
+        lvl = 'Ouro';
+        break
     case (XP > 7000 && XP <= 8000):
-        lvl = 'Platina'
+        lvl = 'Platina';
+        break
     case (XP > 8000 && XP <= 9000):
-        lvl = 'Ascendente'
+        lvl = 'Ascendente';
+        break
     case (XP > 9000 && XP <= 10000):
-        lvl = 'Imortal'
+        lvl = 'Imortal';
+        break
     default:
-        lvl = 'Radiante'
+        lvl = 'Radiante';
 }
 
 console.log(`O herói de nome ${name} está no nível ${lvl}`)
